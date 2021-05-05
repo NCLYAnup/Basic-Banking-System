@@ -1,37 +1,104 @@
-<!DOCTYPE html>
-<html lang="en" dir="ltr">
-  <head>
-    <meta charset="utf-8">
-    <link rel="stylesheet" href="index.css">
-    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css" integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm" crossorigin="anonymous">
-    <title>The Sparks Foundation</title>
-  </head>
-  <body>
-    <div class="header">
-      <h1>Basic Banking System</h1>
-    </div>
-   <div class="Transfer">
-     <div class="first">
-       <form action="alluser.php">
-         <button  class="view" type="submit" name="button">View All Users</button>
-       </form>
-     </div>
-     <div class="second">
-       <form action="transaction.php">
-       <button class="money" type="submit" name="button">Transfer Money</button>
-     </form>
-     </div>
-     <div class="third">
-       <form action="history.php">
-          <button class="history" type="submit" name="button">Transfer History</button>
-       </form>
-     </div>
-   </div>
-  <div class="footer">
 
-  </div>
-   <script src="https://code.jquery.com/jquery-3.2.1.slim.min.js" integrity="sha384-KJ3o2DKtIkvYIK3UENzmM7KCkRr/rE9/Qpg6aAZGJwFDMVNA/GpGFF93hXpG5KkN" crossorigin="anonymous"></script>
-<script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.9/umd/popper.min.js" integrity="sha384-ApNbgh9B+Y1QKtv3Rn7W3mgPxhU9K/ScQsAP7hUibX39j7fakFPskvXusvfa0b4Q" crossorigin="anonymous"></script>
-<script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.min.js" integrity="sha384-JZR6Spejh4U02d8jOt6vLEHfe/JQGiRRSQQxSfFWpi1MquVdAyjUar5+76PVCmYl" crossorigin="anonymous"></script>
-  </body>
-</html>
+*{
+    -webkit-box-sizing: border-box;
+    -moz-box-sizing: border-box;
+    box-sizing: border-box;
+}
+body{
+
+  background-image: url("bs.jpeg");
+  height: 100%;
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+.header{
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 100%;
+  height: 80px;
+  background-color: #51c4d3;
+}
+.footer{
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  bottom: 0;
+}
+button{
+     width: 200px;
+    font-size: 16px;
+    font-weight: 600;
+    color: #fff;
+    cursor: pointer;
+    margin: 20px;
+    height: 55px;
+    text-align:center;
+    border: none;
+    background-size: 300% 100%;
+    border-radius: 50px;
+    moz-transition: all .4s ease-in-out;
+    -o-transition: all .4s ease-in-out;
+    -webkit-transition: all .4s ease-in-out;
+    transition: all .4s ease-in-out;
+    background-image: linear-gradient(to right, #25aae1, #40e495, #30dd8a, #2bb673);
+   box-shadow: 0 4px 15px 0 rgba(49, 196, 190, 0.75);
+
+
+}
+button:hover {
+    background-position: 100% 0;
+    moz-transition: all .4s ease-in-out;
+    -o-transition: all .4s ease-in-out;
+    -webkit-transition: all .4s ease-in-out;
+    transition: all .4s ease-in-out;
+  }
+  button:focus {
+    outline: none;
+}
+.view{
+  margin-top: 220px;
+  border-radius: 10px;
+}
+.money{
+  margin-top: 220px;
+  border-radius: 50px;
+
+}
+.history{
+  margin-top: 220px;
+  border-radius: 10px;
+}
+.Transfer{
+  margin-top: 200px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.first{
+  height: 200px;
+  width: 200px;
+  background: url(https://d1nhio0ox7pgb.cloudfront.net/_img/v_collection_png/512x512/shadow/user_view.png);
+  background-size: cover;
+  margin-left: 250px;
+  margin-right: 250px;
+  z-index: -1;
+}
+.second{
+  height: 200px;
+  width: 200px;
+  margin-right: 250px;
+  background: url(https://cdn3.vectorstock.com/i/1000x1000/23/77/transfer-money-from-hand-to-hand-icon-vector-21002377.jpg);
+  background-size: cover;
+  z-index: -1;
+
+
+}
+.third{
+  height: 200px;
+  width: 200px;
+  margin-right: 250px;
+  background: url(https://thumbs.dreamstime.com/b/simple-money-transfer-logo-vector-concept-design-icon-illustration-fast-cash-bank-pay-business-template-investment-exchange-credit-160260300.jpg);;
+  background-size: cover;
+  z-index: -1;
+}
